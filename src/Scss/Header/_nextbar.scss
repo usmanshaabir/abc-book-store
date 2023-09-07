@@ -1,0 +1,25 @@
+.bg-navbar {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    background-color: #FEF4F4;
+}
+
+.navbar-nav-custom li {
+    margin-right: 45px;
+
+    a {
+        color: #232F55;
+    }
+}
+
+/* CSS for the dropdown menu */
+.navbar-nav-custom .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle::after {
+    content: none;
+
+}

@@ -1,0 +1,15 @@
+.tabs-pill {
+    .nav-link {
+        color: #454E6D;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 7px 24px;
+        margin-right: 8px;
+        border: 1px solid #EEE1E0;
+        border-radius: 50px;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #FF1616 !important;
+    }
+}

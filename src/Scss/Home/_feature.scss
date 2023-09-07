@@ -1,0 +1,51 @@
+.feature {
+    font-family: "Playfair Display", serif;
+
+    .btn-view {
+        border-bottom: 4px;
+    }
+
+    .card-text {
+        h5 {
+
+            color: #fff;
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: 9px;
+            font-weight: 400;
+            display: block;
+        }
+    }
+
+    .slick-next:before {
+        color: white !important;
+    }
+
+    .slick-prev:before {
+        color: #a45151 !important;
+    }
+
+    .slick-next {
+        right: 8px !important;
+    }
+
+    @media screen and (max-width:430px) {
+        .slick-next {
+            display: none !important;
+        }
+
+        .slick-prev {
+            display: none !important;
+        }
+    }
+
+    .add {
+        height: 90% !important;
+    }
+
+    @media screen and (max-width:1025px) {
+        .add {
+            height: 100% !important;
+        }
+    }
+}

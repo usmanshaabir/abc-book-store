@@ -1,0 +1,32 @@
+.footer {
+    background-color: #FEF4F4;
+
+    .facebook {
+        width: 35px;
+        height: 35px;
+        border: 2px solid #EEE1E0;
+        border-radius: 45px;
+        text-align: center;
+        padding-top: 4px;
+        color: #9498A7;
+    }
+
+    .facebook:hover {
+        color: #fff;
+        background: #FF1616;
+        border: 1px solid transparent;
+    }
+
+    .book-category {
+        li {
+            list-style: none;
+
+            a {
+                color: #454E6D;
+                font-weight: 400;
+                font-size: 16px;
+                text-decoration: underline transparent;
+            }
+        }
+    }
+}

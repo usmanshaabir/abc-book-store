@@ -1,0 +1,29 @@
+.search-mian {
+    width: 50%;
+
+    .form-input {
+        padding: 12px 17px !important;
+    }
+
+    .search-icon {
+        right: 26px;
+        top: 18px;
+        font-size: 20px;
+        color: red;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .search-mian {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .button-LP {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+}
