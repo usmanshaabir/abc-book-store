@@ -58,7 +58,7 @@ export default function Items() {
                 <h2 className='text-light'>Wilma Mumduya</h2>
               </div>
               <div>
-                <button className='btn  rounded-pill'>View Details</button>
+                <button className='btn rounded-pill'>View Details</button>
               </div>
             </div>
           </div>

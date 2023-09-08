@@ -1,4 +1,6 @@
 .Categories {
+    font-family: "Playfair Display", serif;
+
     .book-category {
         background-image: url('../../Assets//Images//Categories/h2_hero1.jpg');
         background-repeat: no-repeat;
@@ -13,5 +15,61 @@
         display: block;
         font-weight: 400;
         line-height: 1.4;
+        font-family: "Playfair Display", serif;
+
+    }
+}
+
+.side-bar {
+    border: 1px solid #ededed;
+    padding: 30px 19px 30px 30px;
+
+    label {
+        color: #232F55;
+        font-size: 18px;
+    }
+
+    .form-check-input:checked {
+        background-color: red;
+        border-color: red;
+    }
+
+    .form-check-input[type=checkbox] {
+        border-radius: 1.25em;
+    }
+
+    .form-check-input {
+        width: 25px;
+        height: 25px;
+    }
+
+    .custom-toggle {
+        border: 1px solid #EEE1E0;
+        background: #fff;
+        border-radius: 30px;
+        text-align: start;
+        color: #140C40;
+        width: 330px;
+
+
+    }
+
+    .custom-toggle:active {
+        background: #fff;
+        color: #140C40;
+
+    }
+
+    .dropdown-menu {
+        width: 325px;
+    }
+
+    .active {
+        background-color: red;
+        border-color: red;
+        background-image: url('../../Assets//Images/Tick-checked.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
