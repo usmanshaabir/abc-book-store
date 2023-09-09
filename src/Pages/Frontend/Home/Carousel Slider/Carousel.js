@@ -78,7 +78,7 @@ export default function Carousel() {
       </div>
       <div className="container best-selling">
         <div className="row">
-          <h2 className='text-center mt-5'>Best Selling Books Ever</h2>
+          <h2 className='text-center mt-5'>Best Selling Books Ever test</h2>
           <div>
             <Slider {...settings}>
               <div>
