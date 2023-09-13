@@ -1,0 +1,302 @@
+$text-Color: #fff;
+
+@mixin img-background {
+    background-image: url('../../Assets/Images/about-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.blog {
+    .book-category {
+        @include img-background
+    }
+
+    .img-text {
+        color: $text-Color;
+        font-size: 50px;
+        display: block;
+        font-weight: 400;
+        line-height: 1.4;
+        font-family: "Playfair Display", serif;
+
+    }
+
+    .card {
+        margin: 100px 0px;
+
+        img {
+            border-radius: 0px;
+        }
+
+        .date {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            background-color: #FF1616;
+            border-radius: 5px;
+            text-align: center;
+            bottom: 186px;
+
+
+
+            .number {
+                color: #fff;
+                margin-bottom: 0;
+                margin-top: 11px;
+                font-family: "Playfair Display", serif;
+                font-size: 27px;
+                font-weight: 600;
+
+            }
+
+            .month {
+                color: #fff;
+                font-family: "Playfair Display", serif;
+                margin-bottom: 0;
+                font-size: 20px;
+
+                margin-top: -7px;
+            }
+        }
+
+        @media screen and (max-width:426px) {
+            .date {
+                position: absolute;
+
+                bottom: 230px;
+
+            }
+        }
+
+        @media screen and (max-width:376px) {
+            .date {
+                position: absolute;
+
+                bottom: 260px;
+
+            }
+        }
+
+        @media screen and (max-width:321px) {
+            .date {
+                position: absolute;
+
+                bottom: 284px;
+
+            }
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            color: #2d2d2d;
+            font-size: 27px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Roboto", sans-serif;
+            color: #301A22;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .travel {
+            color: #999999;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .comments {
+            color: #999999;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .travel::after {
+            content: "|";
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    @mixin side-bar-color {
+        background-color: #fbf9ff;
+        padding: 29px;
+    }
+
+    @mixin after-line {
+        content: "";
+        display: block;
+        padding-top: 15px;
+        border-bottom: 1px solid #f0e9ff;
+    }
+
+    .right-bar {
+
+        .ant-input-group {
+            @include side-bar-color;
+        }
+
+        .ant-btn-primary {
+            border-color: #FF1616;
+            background: #FF1616;
+            border: 1px solid #f0e9ff;
+        }
+
+        .right-bar-content {
+            margin-top: 30px;
+            background-color: #fbf9ff;
+            padding: 29px;
+
+            .Category::after {
+                content: "";
+                display: block;
+                padding-top: 15px;
+                border-bottom: 1px solid #f0e9ff;
+            }
+
+            h4 {
+                font-family: "Playfair Display", serif;
+                color: #1a1a1a;
+                margin-top: 0px;
+                font-style: normal;
+                font-weight: 500;
+            }
+
+            ul {
+                list-style: none;
+
+                .item-border::after {
+                    content: "";
+                    display: block;
+                    padding-top: 15px;
+                    border-bottom: 1px solid #f0e9ff;
+                }
+
+
+
+                a {
+                    font-family: "Playfair Display", serif;
+                    margin-bottom: 15px;
+                    font-weight: 300;
+                    text-decoration: none;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #888888;
+                }
+            }
+        }
+
+        .recent-post {
+            margin-top: 30px;
+            @include side-bar-color;
+
+
+            .recent-post-bt-border::after {
+                @include after-line
+            }
+
+            h4 {
+                font-family: "Playfair Display", serif;
+                color: #1a1a1a;
+                margin-top: 0px;
+                font-style: normal;
+                font-weight: 500;
+            }
+
+            .resent-heading {
+                h3 {
+                    font-family: 'Poppins', sans-serif !important;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 6px;
+                    transition: all 0.3s linear;
+                    color: #2d2d2d;
+                    font-weight: 300;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 21px;
+                    margin-bottom: 0px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .tag-clouds {
+            @include side-bar-color;
+            margin-top: 30px;
+
+            .tag-clouds-bt-border::after {
+                @include after-line
+            }
+
+            .btn-setting {
+                border: 1px solid #eeeeee;
+                background: #fff;
+                color: #888888;
+                font-size: 13px;
+                border-radius: 0;
+                margin-right: 8px;
+                margin-bottom: 11px;
+            }
+
+            .btn-setting:hover {
+                background: #FF1616;
+                color: #fff !important;
+                -webkit-text-fill-color: #fff;
+                text-decoration: none;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+            }
+        }
+
+        .instagram-feeds {
+            @include side-bar-color;
+            margin-top: 30px;
+        }
+
+        .instagram-feeds-bt-border::after {
+            @include after-line
+        }
+
+        .newsletter {
+            @include side-bar-color;
+            margin-top: 30px;
+        }
+
+        .newsletter-bt-border::after {
+            @include after-line
+        }
+
+        .btn-subscribe {
+            background: #fff;
+            color: #FF1616 !important;
+            display: inline-block;
+            padding: 18px 44px;
+            font-family: "Playfair Display", serif;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 0;
+            border: 1px solid #FF1616;
+            text-align: center;
+            color: #FF1616;
+            cursor: pointer;
+        }
+
+        .btn-subscribe:hover {
+            background: #FF1616;
+            color: #fff !important;
+            -webkit-text-fill-color: #fff;
+            text-decoration: none;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+    }
+}

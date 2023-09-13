@@ -20,7 +20,7 @@ export default function Nextbar() {
                 <Link to="Categories" className="nav-link">Categories</Link >
               </li>
               <li className="nav-item">
-                <Link to="" className="nav-link">About</Link >
+                <Link to="About" className="nav-link">About</Link >
               </li>
               <li className="nav-item dropdown">
                 <Link to="" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,7 +36,7 @@ export default function Nextbar() {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link to="" className="nav-link">Blog</Link >
+                <Link to="Blog" className="nav-link">Blog</Link >
               </li>
               <li className="nav-item">
                 <Link to="" className="nav-link">Contect</Link >
