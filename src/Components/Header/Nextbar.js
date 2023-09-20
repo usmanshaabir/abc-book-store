@@ -17,18 +17,18 @@ export default function Nextbar() {
                 <Link to="/" className="nav-link " aria-current="page">Home</Link >
               </li>
               <li className="nav-item">
-                <Link to="Categories" className="nav-link">Categories</Link >
+                <Link to="/Categories" className="nav-link">Categories</Link >
               </li>
               <li className="nav-item">
-                <Link to="About" className="nav-link">About</Link >
+                <Link to="/About" className="nav-link">About</Link >
               </li>
               <li className="nav-item dropdown">
                 <Link to="" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Pages
                 </Link >
                 <ul className="dropdown-menu">
-                  <li><Link to="" className="dropdown-item">Login</Link ></li>
-                  <li><Link to="" className="dropdown-item">Cart</Link ></li>
+                  <li><Link to="/Auth/login" className="dropdown-item">Login</Link ></li>
+                  <li><Link to="/pages/cart" className="dropdown-item">Cart</Link ></li>
                   <li><Link to="" className="dropdown-item">Checkout</Link ></li>
                   <li><Link to="" className="dropdown-item">Book Details</Link ></li>
                   <li><Link to="" className="dropdown-item">Blog Details</Link ></li>
@@ -36,10 +36,10 @@ export default function Nextbar() {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link to="Blog" className="nav-link">Blog</Link >
+                <Link to="/Blog" className="nav-link">Blog</Link >
               </li>
               <li className="nav-item">
-                <Link to="" className="nav-link">Contect</Link >
+                <Link to="/Contect" className="nav-link">Contect</Link >
               </li>
             </ul>
           </div>

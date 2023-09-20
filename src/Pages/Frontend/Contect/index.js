@@ -1,14 +1,13 @@
-import React from 'react';
-import Blog from './Blog';
+import React from 'react'
+import Contect from './Contect'
+import Footer from '../../../Components/Footer'
 import Header from '../../../Components/Header';
-import Footer from '../../../Components/Footer';
-
 
 export default function index() {
     return (
         <>
             <Header />
-            <Blog />
+            <Contect />
             <Footer />
         </>
     )

@@ -1,0 +1,78 @@
+.login {
+
+    h3,
+    p {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .card {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: none;
+
+
+        .card-body {
+
+            .email-address {
+                display: block;
+                font-size: 17px;
+                margin-bottom: 6px;
+                color: #140C40;
+                text-transform: capitalize;
+                font-weight: 500;
+                text-align: left;
+            }
+
+            .inp-email {
+                padding: 15px;
+            }
+
+            .inp-email::placeholder {
+                font-size: 14px;
+            }
+        }
+
+        .form-check {
+            label {
+                display: block;
+                font-size: 17px;
+                margin-bottom: 6px;
+                color: #140C40;
+                text-transform: capitalize;
+                font-weight: 500;
+                text-align: left
+            }
+        }
+
+        .forget-pas {
+            a {
+                text-decoration: none;
+                color: #FF1616;
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+
+        .sign-up {
+            font-family: "Roboto", sans-serif;
+            color: #402931;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            font-weight: 300;
+            line-height: 1.6;
+
+            a {
+                color: #FF1616;
+                text-decoration: none;
+            }
+        }
+
+        .btn-login {
+            padding: 18px 41px;
+            background-color: #FF1616;
+            border-radius: 0;
+            color: #fff;
+        }
+    }
+
+}

@@ -32,7 +32,7 @@ export default function Feature() {
           <div className='bg-danger'>
             <Slider {...settings}>
               <div className='pt-3 ps-3'>
-                <div className="card mb-3 border-0" style={{ maxWidth: "540 px" }}>
+                <div className="mb-3 border-0" style={{ maxWidth: "540 px" }}>
                   <div className="row g-0">
                     <div className="col-md-4 bg-danger">
                       <img src={featureBook} className="img-fluid rounded-start" alt="..." />
@@ -51,7 +51,7 @@ export default function Feature() {
                 </div>
               </div>
               <div className='pt-3 ps-3'>
-                <div className="card mb-3 border-0" style={{ maxWidth: "540 px" }}>
+                <div className="mb-3 border-0" style={{ maxWidth: "540 px" }}>
                   <div className="row g-0">
                     <div className="col-md-4 bg-danger">
                       <img src={featureBook} className="img-fluid rounded-start" alt="..." />

@@ -1,3 +1,10 @@
+@mixin btn-common {
+    background-color: #FF1616;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 31px;
+}
+
 .publish-items {
     h2 {
         font-size: 30px;
@@ -134,10 +141,11 @@
     }
 
     button {
-        background-color: #FF1616;
-        color: #fff;
-        font-weight: 600;
-        padding: 12px 31px;
+        @include btn-common
+    }
+
+    button:hover {
+        @include btn-common
     }
 
     @media screen and (max-width:769px) {
@@ -165,10 +173,11 @@
     }
 
     button {
-        background-color: #FF1616;
-        color: #fff;
-        font-weight: 600;
-        padding: 12px 31px;
+        @include btn-common
+    }
+
+    button:hover {
+        @include btn-common
     }
 }
 
@@ -180,10 +189,7 @@
     padding: 55px 0px;
 
     button {
-        background-color: #FF1616;
-        color: #fff;
-        font-weight: 600;
-        padding: 12px 31px;
+        @include btn-common
     }
 
     h3 {
@@ -207,4 +213,10 @@
     input {
         padding: 12px 26px;
     }
+
+    .btn-subscribe:hover {
+        @include btn-common
+    }
 }
+
+.btn-details {}

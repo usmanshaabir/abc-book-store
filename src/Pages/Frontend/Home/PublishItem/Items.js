@@ -48,7 +48,7 @@ export default function Items() {
                 <h2 className='text-light'>The History <br /> of Phipino</h2>
               </div>
               <div>
-                <button className='btn rounded-pill'>View Details</button>
+                <button className='btn btn-details rounded-pill'>View Details</button>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function Items() {
                 <h2 className='text-light'>Wilma Mumduya</h2>
               </div>
               <div>
-                <button className='btn rounded-pill'>View Details</button>
+                <button className='btn btn-details rounded-pill'>View Details</button>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Items() {
                 <input type="text" className="form-control rounded-pill" placeholder="Enter your email" />
               </div>
               <div>
-                <button className='btn   rounded-pill'>Subscribe</button>
+                <button className='btn btn-subscribe rounded-pill'>Subscribe</button>
               </div>
             </div>
           </div>

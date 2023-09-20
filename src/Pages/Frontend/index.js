@@ -1,25 +1,25 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from '../Frontend/Home/index';
-import Categories from '../Frontend/Categories/index';
-import Header from '../../Components/Header';
-import Footer from '../../Components/Footer';
-import About from './About/About';
-import Blog from './Blog/Blog';
+import Home from './Home';
+import Categories from './Categories';
+import About from './About';
+import Blog from './Blog';
+import Contect from './Contect';
+import Pages from './Pages/index';
 
 export default function Index() {
     return (
-        <>
-            <Header />
-            <main>
-                <Routes>
-                    <Route index element={<Home />} />
-                    <Route path='Categories' element={<Categories />} />
-                    <Route path='About' element={<About />} />
-                    <Route path='Blog' element={<Blog />} />
-                </Routes>
-            </main>
-            <Footer />
-        </>
+
+        <Routes>
+            <Route index element={<Home />} />
+            <Route path='Categories/' element={<Categories />} />
+            <Route path='About/' element={<About />} />
+            <Route path='Blog/' element={<Blog />} />
+            <Route path='Contect/' element={<Contect />} />
+            <Route path='pages/*' element={<Pages />} />
+        </Routes>
+
+
+
     )
 }

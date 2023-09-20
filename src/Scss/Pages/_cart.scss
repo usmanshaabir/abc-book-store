@@ -1,0 +1,103 @@
+@mixin img-background {
+    background-image: url('../../Assets/Images/about-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+$text-Color: #fff;
+
+.cart {
+    .contect-img {
+        @include img-background
+    }
+
+    .img-text {
+        color: $text-Color;
+        font-size: 50px;
+        display: block;
+        font-weight: 400;
+        line-height: 1.4;
+        font-family: "Playfair Display", serif;
+
+    }
+
+    .table {
+        tr {
+            th {
+                font-size: 14px;
+                font-weight: 500;
+                font-family: "Roboto", sans-serif;
+                color: #797979;
+            }
+        }
+
+        .product-img {
+            width: 75%;
+        }
+
+        .product-text {
+            font-family: "Roboto", sans-serif;
+            color: #301A22;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .product-counter {
+            display: flex;
+
+            product-counter:first-child {
+                margin-right: -18px;
+            }
+
+            .increment {
+                border: 1px solid #eeeeee;
+                cursor: pointer;
+                width: 26px;
+                text-align: center;
+            }
+
+            .form-control {
+                padding: 13px 15px;
+            }
+        }
+
+        .table-row {
+            border-bottom: 1px solid #d4d2d2;
+
+            td {
+                vertical-align: middle;
+            }
+
+            .btn-update-cart {
+                background-color: #FF1616;
+                color: #fff;
+                padding: 9px 30px;
+                border-radius: 50px;
+            }
+        }
+
+        .form-check-reverse {
+            label {
+                font-weight: 500;
+                color: #606060;
+            }
+        }
+
+        .btn-dropdown {
+            background-color: #f4f4f4;
+            color: black;
+            border-color: #f4f4f4;
+
+        }
+
+        .postcode-inp {
+            background-color: #f4f4f4;
+            border-radius: 0;
+        }
+    }
+}
