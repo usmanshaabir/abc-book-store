@@ -9,7 +9,20 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import logo from '../../Assets/Images/BookLogo.png'
 
 export default function Footer() {
-  const date = new Date().getFullYear()
+  const date = new Date().getFullYear();
+
+  function handleFacekbook() {
+    window.open("https://www.facebook.com", '_blank')
+  }
+  function handleInstragram() {
+    window.open("https://www.instagram.com", '_blank')
+  }
+  function handleLinkdin() {
+    window.open("https://www.linkedin.com", '_blank')
+  }
+  function handleYouTube() {
+    window.open("https://www.youtube.com", '_blank')
+  }
   return (
     <div className='footer'>
       <div className="container pt-5">
@@ -21,16 +34,16 @@ export default function Footer() {
             </div>
             <div className='d-flex'>
               <div className='facebook me-2'>
-                <FontAwesomeIcon icon={faFacebook} />
+                <FontAwesomeIcon icon={faFacebook} onClick={handleFacekbook} style={{ cursor: "pointer" }} />
               </div>
               <div className='facebook me-2'>
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faInstagram} onClick={handleInstragram} style={{ cursor: "pointer" }} />
               </div>
               <div className='facebook me-2'>
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faLinkedin} onClick={handleLinkdin} style={{ cursor: "pointer" }} />
               </div>
               <div className='facebook'>
-                <FontAwesomeIcon icon={faYoutube} />
+                <FontAwesomeIcon icon={faYoutube} onClick={handleYouTube} style={{ cursor: "pointer" }} />
               </div>
             </div>
           </div>

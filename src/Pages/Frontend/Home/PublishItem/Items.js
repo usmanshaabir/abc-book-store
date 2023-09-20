@@ -6,6 +6,8 @@ import Horror from './AllTabs/Horror';
 import Thriller from './AllTabs/Thriller';
 import ScienceFiction from './AllTabs/ScienceFiction';
 
+import NewsLetter from '../Newsletter/NewsLetter';
+
 export default function Items() {
 
   return (
@@ -63,22 +65,7 @@ export default function Items() {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className='section-bg'>
-            <div className='text-center '>
-              <h3>Join Newsletter</h3>
-              <p>Lorem started its journey with cast iron (CI) products in 1980. The initial main <br /> objective was to ensure pure water and affordable irrigation.</p>
-            </div>
-            <div className='d-flex justify-content-center align-items-center flex-wrap'>
-              <div className='me-3'>
-                <input type="text" className="form-control rounded-pill" placeholder="Enter your email" />
-              </div>
-              <div>
-                <button className='btn btn-subscribe rounded-pill'>Subscribe</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <NewsLetter />
       </div>
     </>
   )

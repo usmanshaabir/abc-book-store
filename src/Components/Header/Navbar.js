@@ -4,6 +4,7 @@ import BookLogo from '../../Assets/Images/BookLogo.png';
 import cart from '../../Assets/Images/cart.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -52,7 +53,7 @@ export default function Navbar() {
                     <img src={cart} className='me-4' alt="cart" />
                   </div>
                   <div>
-                    <button className='btn btn-danger rounded-pill ps-4 pe-4 '>Sign in</button>
+                    <Link to="/Auth/login" className='btn btn-danger rounded-pill ps-4 pe-4 '>Sign in</Link>
                   </div>
                 </div>
               </div>
