@@ -4,6 +4,7 @@ import Frontend from '../Pages/Frontend';
 import Auth from '../Pages/Auth';
 import Dashboard from '../Pages/Dashboard';
 import Login from './Auth/Login';
+import SignUp from './Auth/SignUp';
 
 export default function PublicRoutes() {
     return (
@@ -18,8 +19,11 @@ export default function PublicRoutes() {
                     </Routes>
                 </>
                 :
-                <Login />
-
+                <Routes>
+                    <Route path='/' element={<Login />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/signup' element={<SignUp />} />
+                </Routes>
             }
 
         </>

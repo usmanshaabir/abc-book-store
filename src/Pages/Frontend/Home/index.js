@@ -4,6 +4,7 @@ import Feature from './Feature/Feature';
 import Items from './PublishItem/Items';
 import Header from '../../../Components/Header';
 import Footer from '../../../Components/Footer';
+import Scroll from '../ScrollToTop/Scroll';
 
 export default function index() {
     return (

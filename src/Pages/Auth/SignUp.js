@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import "../../Scss/Auth/_login.scss";
 import { auth } from '../../Firebase/Config';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const initState = { email: '', password: '' }
 
@@ -23,9 +25,13 @@ export default function SignUp() {
         // Signed in 
         const user = userCredential.user;
         console.log("Signed up", user);
+        toast("Your Account Successfully Done");
       })
       .catch((error) => {
         console.error('Error', error);
+        // alert("Already in Use Email and Password");
+        toast("Email and Password Already in Use");
+
       });
   }
   return (
@@ -64,7 +70,10 @@ export default function SignUp() {
             </div>
           </div>
         </div>
+
       </div>
+      <ToastContainer />
+
     </>
   )
 }

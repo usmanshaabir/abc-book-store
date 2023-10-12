@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import { firestore } from '../../../../Firebase/Config';
 import { doc, setDoc } from 'firebase/firestore';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const initState = { email: '' };
 
@@ -21,10 +23,12 @@ export default function NewsLetter() {
       await setDoc(doc(firestore, "newsletter", userEmail.id), userEmail);
       console.log("Email Successfully Added");
       setState(initState);
-
+      toast("Email Successfully Added");
     }
     catch (error) {
-      console.error("Code Error", error)
+      console.error("Code Error", error);
+      toast("Email Not Successfully Added");
+
     }
 
   }
@@ -47,6 +51,7 @@ export default function NewsLetter() {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   )
 }

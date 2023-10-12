@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../Firebase/Config';
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const initState = { email: '', password: '' }
 export default function Login() {
@@ -18,18 +20,21 @@ export default function Login() {
 
   const handleLogin = () => {
 
-    const { email, password } = state
+    const { email, password } = state;
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
         localStorage.setItem('login', user.email)
+        toast("Successfully Login");
         navigate('/')
         window.location.reload()
-        console.log("Enter User", user)
+        console.log("Enter User", user);
       })
       .catch((error) => {
         console.error("Error", error)
+        toast("Plz Try Again");
+
       });
   }
   return (
@@ -70,6 +75,7 @@ export default function Login() {
             </div>
           </div>
         </div>
+        <ToastContainer />
       </div>
     </>
   )
